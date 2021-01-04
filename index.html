@@ -1,1 +1,22 @@
-<h1>Hello World!</h1>
+<!DOCTYPE html>
+<html>
+<body onload="delayedRedirect()">
+
+<h2>Redirect to my webpage: </h2>
+  <p>http://www.srivamsimalladi.live</p>
+
+<script>
+function redirect() {
+  location.replace("http://www.srivamsimalladi.live")
+}
+  
+var delayInMilliseconds = 2000; //1 second
+function delayedRedirect() {
+  setTimeout(function() {
+    redirect();
+  }, delayInMilliseconds);
+}
+</script>
+
+</body>
+</html> 
